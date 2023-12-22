@@ -1,0 +1,99 @@
+    1  #!/bin/bash -li
+    2  cd /ide/xterm || exit
+    3  exec /ide/xterm/bin/node /ide/xterm/index.cjs "$@"
+    4  vim create.sh
+    5  bash create.sh
+    6  ls
+    7  rm *.txt
+    8  ls
+    9  mkdir users
+   10  cd users
+   11  bash create.sh
+   12  bash ../create.sh
+   13  ls
+   14  cd../
+   15  cd ../
+   16  mkdir groups
+   17  cd groups
+   18  vim ../create.sh
+   19  bash ../create.sh
+   20  ls
+   21  cd ../
+   22  mkdir subjects
+   23  cd subjects
+   24  vim ../create.sh
+   25  bash ../create.sh
+   26  ls
+   27  histoty
+   28  history
+   29  cd ../
+   30  vim commads_log.txt
+   31  git remote remove origin 
+   32  git remote add origin https://github.com/youqueen/september3.git
+   33  git add . && git commit -m "task 1" && git push origin main
+   34  ssh-keygen
+   35  cat ~/.ssh/id_rsa.pub
+   36  git remote remove origin
+   37  git remote add origin
+   38  git@github.com:youqueen/september3.git
+   39  git remote add origin
+   40  git remote add origin git@github.com:youqueen/september3.git
+   41  git add . && git commit -m "task 1" && git push origin main
+   42  git status
+   43  cd ../
+   44  git clone git@github.com:youqueen/september3.git
+   45  ls -a
+   46  mv september3 test1
+   47  git clone git@github.com:youqueen/september3.git
+   48  cd september3
+   49  cp ../test1/* . -r
+   50  ls
+   51  git add . && git commit -m "task 1" && git push origin main
+   52  mkdir task1
+   53  cd task1
+   54  cp ../* . -r
+   55  cp ../groups . -r && cp ../users . -r && cp ../subjects . -r && cp *.txt .
+   56  ls
+   57  rm -rf ../groups && rm -rf ../users && rm -rf ../subjects
+   58  ls ..
+   59  rm *.txt
+   60  cp ../*.txt && rm ../*.txt
+   61  cp ../*.txt . && rm ../*.txt
+   62  ls
+   63  git add . && git commit -m "task 1" && git push origin main
+   64  ls ..
+   65  cd ../
+   66  mkdir task2
+   67  cd task2
+   68  mkdir example home
+   69  ls
+   70  cd example
+   71  touch example{1..879}.txt
+   72  ls
+   73  cd ../
+   74  cd home
+   75  mkdir user1
+   76  cd home1
+   77  mkdir files photos videos
+   78  cd home
+   79  ls
+   80  rm -rf files photos videos 
+   81  ls
+   82  cd user1
+   83  ls
+   84  mkdir files photos videos
+   85  cd files && touch file{1..30}.txt && cd ..
+   86  cd photos && touch photo{1..204}.txt && cd ..
+   87  cd videos && touch video{1..29}.txt && cd ..
+   88  cd ../ && mkdir user2 && cp ../user1/* user2/ -r
+   89  cd ../ && mkdir user2 && cp user1/* user2/ -r 
+   90  cd home
+   91  ls
+   92  ls user2
+   93  cp user1/* user2/ -r
+   94  ls user2
+   95  mkdir user3 && cp user1/* user3/ -r
+   96  mkdir user3 && cp user1/* user4/ -r
+   97  mkdir user4 && cp user1/* user4/ -r
+   98  mkdir user5 && cp user1/* user5/ -r
+   99  cd ../ && history > commands_log.txt
